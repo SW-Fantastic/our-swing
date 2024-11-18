@@ -21,10 +21,10 @@ public class Column {
         return this;
     }
 
-    public Column headerLabel(String text) {
-        column.setHeaderValue(text);
-        return this;
+    public TableCellRenderer renderer() {
+        return column.getCellRenderer();
     }
+
 
     public Column headerRender(TableCellRenderer renderer) {
         column.setHeaderRenderer(renderer);
